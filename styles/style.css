@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: grid;
+  align-items: center;
 }
 
 h1,
@@ -57,12 +59,11 @@ button {
 
 .content {
   max-inline-size: 1140px;
-  margin: 0 auto;
+  margin: auto auto;
   display: grid;
   grid-template-columns: 1fr 399px;
   gap: 30px;
   align-items: end;
-  padding: 266px 0;
 }
 
 .result {
@@ -226,18 +227,26 @@ button {
   color: #fff;
 }
 
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
+.content__card-link:active {
+  text-decoration: none;
+  background-color: #545050;
+}
+
 .content__video-card {
   display: grid;
   grid-template-columns: 200px 1fr;
 }
 
 .content__card-link_current {
-  text-decoration: none;
-  background-color: #545050;
-}
-
-.content__card-link_current:active {
-  text-decoration: none;
   background-color: #545050;
 }
 
@@ -245,14 +254,6 @@ button {
   display: grid;
   grid-template-rows: 30px 1fr;
   gap: 6px;
-}
-
-.content__video-card-description-container:hover {
-  text-decoration: underline;
-}
-
-.content__video-card-description-container:active {
-  text-decoration: none;
 }
 
 .content__video-card-title {
