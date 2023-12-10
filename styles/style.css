@@ -62,7 +62,7 @@ button {
   grid-template-columns: 1fr 399px;
   gap: 30px;
   align-items: end;
-  padding: 130px 0;
+  padding-top: 133px;
 }
 
 .result {
