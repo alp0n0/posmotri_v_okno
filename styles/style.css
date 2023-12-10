@@ -57,11 +57,12 @@ button {
 
 .content {
   max-inline-size: 1140px;
-  margin: 133px auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 399px;
   gap: 30px;
   align-items: end;
+  padding: 266px 0;
 }
 
 .result {
