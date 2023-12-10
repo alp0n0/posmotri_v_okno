@@ -59,7 +59,7 @@ button {
 
 .content {
   max-inline-size: 1140px;
-  margin: auto auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 399px;
   gap: 30px;
@@ -74,12 +74,13 @@ button {
 
 .result__video-container {
   position: relative;
+  overflow: hidden;
 }
 
 .result__video {
   inline-size: 100%;
   block-size: 100%;
-  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -99,7 +100,7 @@ button {
 }
 
 .search-form__textfield {
-  color: rgba(255, 255, 255, 0.70);
+  color: #fff;
   font-size: inherit;
   font-family: inherit;
   background-color: #1b1919;
@@ -107,6 +108,10 @@ button {
   border: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
+}
+
+.search-form__textfield::placeholder {
+  color: rgba(255, 255, 255, 0.70);
 }
 
 .search-form__textfield:focus {
@@ -216,8 +221,15 @@ button {
 .content__list {
   position: relative;
   display: grid;
-  gap: 30px;
   overflow: hidden scroll;
+}
+
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__list-item:last-child {
+  padding-bottom: 0;
 }
 
 .content__card-link {
@@ -266,6 +278,7 @@ button {
   inline-size: 100%;
   block-size: 103px;
   padding: 2px;
+  object-fit: cover;
 }
 
 .more-button {
