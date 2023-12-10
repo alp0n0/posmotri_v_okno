@@ -236,11 +236,6 @@ button {
   background-color: #545050;
 }
 
-.content__card-link:active {
-  text-decoration: none;
-  background-color: #545050;
-}
-
 .content__video-card {
   display: grid;
   grid-template-columns: 200px 1fr;
